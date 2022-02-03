@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio sesión 2</title>
+</head>
+
+<body>
+    <form id="formulario1" action="recibeform.html" method="post">
+        <fieldset>
+            <legend>Complete los siguiente datos</legend>
+            <div>
+                <input type="text" id="formulario_nombre" name="nombre" pattern="[A-Za-z0-9]+" placeholder="Introduzca su nombre" required>
+                <p></p>
+                <input type="text" id="formulario_apellido" name="apellido" pattern="[A-Za-z0-9]+" placeholder="Introduzca su apellido" required>
+                <p></p>
+                <input type="email" id="formulario_email" name="email" placeholder="Introduzca su email" required>
+                <p></p>
+                <input type="tel" id="formulario_tel" name="tel" placeholder="Número de contacto" required>
+                <p></p>
+                <input type="text" id="formulario_dirección" name="dirección" pattern="[A-Za-z0-9]+" placeholder="Introduzca su dirección" required>
+                <p></p>
+            </div>
+            <div>
+                <input type="submit" value="Enviar formulario" />
+            </div>
+        </fieldset>
+    </form>
+    <p></p>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td colspan="2">Nombre y Apellido</td>
+                <td>País</td>
+                <td>Edad</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Nuñez</td>
+                <td>Argentina</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Jose</td>
+                <td>Perez</td>
+                <td>España</td>
+                <td rowspan="2">22</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>Martinez</td>
+                <td>Argentina</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
